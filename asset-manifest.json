@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/test-series/static/css/main.e980b8c3.chunk.css",
+    "main.js": "/test-series/static/js/main.6ed2b147.chunk.js",
+    "main.js.map": "/test-series/static/js/main.6ed2b147.chunk.js.map",
+    "runtime-main.js": "/test-series/static/js/runtime-main.27ce2cd2.js",
+    "runtime-main.js.map": "/test-series/static/js/runtime-main.27ce2cd2.js.map",
+    "static/css/2.0624914a.chunk.css": "/test-series/static/css/2.0624914a.chunk.css",
+    "static/js/2.f0de2f92.chunk.js": "/test-series/static/js/2.f0de2f92.chunk.js",
+    "static/js/2.f0de2f92.chunk.js.map": "/test-series/static/js/2.f0de2f92.chunk.js.map",
+    "index.html": "/test-series/index.html",
+    "precache-manifest.3def6b9b54a66e884dd59376d72ec365.js": "/test-series/precache-manifest.3def6b9b54a66e884dd59376d72ec365.js",
+    "service-worker.js": "/test-series/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/test-series/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.e980b8c3.chunk.css.map": "/test-series/static/css/main.e980b8c3.chunk.css.map",
+    "static/media/nirmaan.jpg": "/test-series/static/media/nirmaan.e9294754.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27ce2cd2.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.f0de2f92.chunk.js",
+    "static/css/main.e980b8c3.chunk.css",
+    "static/js/main.6ed2b147.chunk.js"
+  ]
+}
