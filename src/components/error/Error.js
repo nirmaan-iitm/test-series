@@ -2,15 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 class Error extends Component {
-    handleChange = (e) => {
-        this.setState({
-            [e.target.id]: e.target.value
-        })
-    }
-    redirect = (e) => {
-        e.preventDefault();
-        window.location = this.state.url;
-    }
     render(){
         var {auth, id} = this.props;
         if (auth.isLoaded && auth.isEmpty) id = "235"

@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
+import basefunc from '../../config/base'
 
 class HAdmin extends Component {
     handleSubmit = (e) => {
         console.log("jhj")
         const num = Math.random().toString(36).slice(2); 
-        const url = "/create".concat("/", num, "/1")
-        window.location = url
+        const url = "create".concat("/", num, "/1")
+        window.location = basefunc(url)
     }
     render(){
         const {auth} = this.props;

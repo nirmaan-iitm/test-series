@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import '../../css/home.css'
 import nirmaan from '../../img/nirmaan.jpg'
+import basefunc from '../../config/base'
 
 class Home extends Component {
     state = {
@@ -15,13 +16,13 @@ class Home extends Component {
     }
     redirect = (e) => {
         e.preventDefault();
-        const test_url = "/test/".concat(this.state.url)
-        window.location = test_url;
+        const test_url = "test/".concat(this.state.url)
+        window.location = basefunc(test_url);
     }
     render(){
         const {auth} = this.props;
-        if (auth.isLoaded && auth.isEmpty) return <Redirect to='/login' />
         if (auth.isLoaded && auth.email === "admin@nirmaan.com") return <Redirect to='/create' />
+        // if (auth.isLoaded && !auth.isEmpty) return <Redirect to='/' />
         const content = auth.uid ? 
         <div>
             <form onSubmit={this.redirect}>
@@ -42,8 +43,8 @@ class Home extends Component {
             <br></br>
             <hr></hr>
             <br></br>
-            <button type="button" class="btn btn-primary" onClick={window.location = "/login"}>Login</button> &nbsp; &nbsp;
-            <button type="button" class="btn btn-primary" onClick={window.location = "/signup"}>Login</button>
+            <button type="button" className="btn btn-primary" onClick={function(){window.location = basefunc("login")}}>Login</button> &nbsp; &nbsp;
+            <button type="button" className="btn btn-primary" onClick={function(){window.location = basefunc("signup")}}>SignUp</button>
         </div>
         return(
             <div>

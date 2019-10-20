@@ -2,11 +2,12 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signOut } from '../../store/actions/authActions'
+import basefunc from '../../config/base'
 
 const SignedInLinks = (props) => {
     return (
         <ul className="navbar-nav">
-            <li className="nav-item"><a href="/" onClick={props.signOut}>Log Out</a></li>
+            <li className="nav-item"><a href={basefunc("")} onClick={props.signOut}>Log Out</a></li>
             <li className="nav-item">
                 <NavLink to='/' className="btn btn-floating pink ligthen-1">
                     {props.profile.initials}

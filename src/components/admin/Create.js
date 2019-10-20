@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import { createQues } from '../../store/actions/testActions'
+import basefunc from '../../config/base'
 
 class Create extends Component {
     state = {
@@ -40,8 +41,8 @@ class Create extends Component {
     }
     handleOver = (e) => {
         const {id} = this.props
-        const url = "/AThanks/".concat(id);
-        window.location = url
+        const url = "AThanks/".concat(id);
+        window.location = basefunc(url)
     }
     render(){
         const {id, qid, auth} = this.props;
