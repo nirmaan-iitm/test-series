@@ -20,13 +20,13 @@ function App() {
     <Topnavbar />
       <Switch>
         <Route exact path='/' component={Home}/>  
-        <Route path={'/test/:id'} component={Test}/>
-        <Route path={'/login'} component={SignIn} />
-        <Route path='/signup' component={SignUp} />
-        <Route path='/HAdmin' component={HAdmin} />
-        <Route path='/AThanks/:id' component={AThanks} />
-        <Route path='/create/:id?/:qid?' component={Create} />
-        <Route path='/error/:id' component={Error} />
+        <Route path={base + 'test/:id'} component={Test}/>
+        <Route path={base + 'login'} component={SignIn} />
+        <Route path={base + 'signup'} component={SignUp} />
+        <Route path={base + 'HAdmin'} component={HAdmin} />
+        <Route path={base + 'AThanks/:id'} component={AThanks} />
+        <Route path={base + 'create/:id?/:qid?'} component={Create} />
+        <Route path={base + 'error/:id'} component={Error} />
       </Switch>
     </div>
     </BrowserRouter>
