@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route, BrowserRouter} from 'react-router-dom'
+import { Switch, Route, HashRouter} from 'react-router-dom'
 import Home from './components/projects/Home'
 import Topnavbar from './components/layout/Topnavbar'
 import Create from './components/admin/Create'
@@ -10,12 +10,10 @@ import HAdmin from './components/admin/HAdmin'
 import AThanks from './components/admin/AThanks'
 import Test from './components/projects/Test'
 import Error from './components/error/Error'
-import basefunc from './config/base';
 
 function App() {
-  const base = basefunc("")
   return (
-    <BrowserRouter basename={base}>
+    <HashRouter>
     <div className="App">
     <Topnavbar />
       <Switch>
@@ -29,7 +27,7 @@ function App() {
         <Route exact path='/error/:id' component={Error} />
       </Switch>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
