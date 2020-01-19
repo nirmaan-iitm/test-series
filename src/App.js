@@ -10,11 +10,11 @@ import HAdmin from './components/admin/HAdmin'
 import AThanks from './components/admin/AThanks'
 import Test from './components/projects/Test'
 import Error from './components/error/Error'
-import basefunc from './config/base'
+// import basefunc from './config/base'
 
 function App() {
   return (
-    <BrowserRouter basename={basefunc("")}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className="App">
     <Topnavbar />
       <Switch>
