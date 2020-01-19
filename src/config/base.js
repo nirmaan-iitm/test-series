@@ -1,10 +1,13 @@
 function basefunc(x){
     var base
-    if (window.location.hostname === "localhost"){
-        base = "".concat("/",x)
-    }else{
+    console.log(window.location.hostname)
+    if(window.location.hostname === "nirmaan-iitm.github.io"){
         base = "/test-series".concat("/",x)
     }
+    else{
+        base  = "".concat('/',x)
+    }
+    console.log(base)
     return base
 }
 

@@ -10,17 +10,18 @@ import HAdmin from './components/admin/HAdmin'
 import AThanks from './components/admin/AThanks'
 import Test from './components/projects/Test'
 import Error from './components/error/Error'
-// import basefunc from './config/base'
+import basefunc from './config/base';
 
 function App() {
+  const base = basefunc("")
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={base}>
     <div className="App">
     <Topnavbar />
       <Switch>
         <Route exact path='/' component={Home}/>  
-        <Route path='/test/:id' component={Test}/>
-        <Route path='/login' component={SignIn} />
+        <Route path={'/test/:id'} component={Test}/>
+        <Route path={'/login'} component={SignIn} />
         <Route path='/signup' component={SignUp} />
         <Route path='/HAdmin' component={HAdmin} />
         <Route path='/AThanks/:id' component={AThanks} />
